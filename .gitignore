@@ -1,0 +1,21 @@
+# Operating System Files
+.DS_Store
+Thumbs.db
+
+# Editor & IDE Directories
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Minikube & Local Cluster Temp Files
+.minikube/
+kubeconfig
+*.log
+
+# Sensitive Files
+*.pem
+*.key
+*.crt
+kubeconfig.yaml
+secret-*.yaml

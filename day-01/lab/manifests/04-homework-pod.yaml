@@ -1,0 +1,20 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: my-homework-app
+  labels:
+    app: homework
+    env: dev
+spec:
+  containers:
+  - name: httpd-container
+    image: httpd:alpine
+    ports:
+    - containerPort: 80
+    resources:
+      requests:
+        memory: "32Mi"
+        cpu: "50m"
+      limits:
+        memory: "64Mi"
+        cpu: "100m"
